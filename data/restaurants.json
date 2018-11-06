@@ -5,6 +5,7 @@
 			"name": "Mission Chinese Food",
 			"neighborhood": "Manhattan",
 			"photograph": "1.jpg",
+			"alt": "Authentic chinese food",
 			"address": "171 E Broadway, New York, NY 10002",
 			"latlng": {
 				"lat": 40.713829,
@@ -46,6 +47,7 @@
 			"name": "Emily",
 			"neighborhood": "Brooklyn",
 			"photograph": "2.jpg",
+			"alt": "Cozy, gourmet eatery serves wood-fired pizzas, rustic small plates & pastas.",
 			"address": "919 Fulton St, Brooklyn, NY 11238",
 			"latlng": {
 				"lat": 40.683555,
@@ -87,6 +89,7 @@
 			"name": "Kang Ho Dong Baekjeong",
 			"neighborhood": "Manhattan",
 			"photograph": "3.jpg",
+			"alt": "Classic Korean dishes and spirits",
 			"address": "1 E 32nd St, New York, NY 10016",
 			"latlng": {
 				"lat": 40.747143,
@@ -128,6 +131,7 @@
 			"name": "Katz's Delicatessen",
 			"neighborhood": "Manhattan",
 			"photograph": "4.jpg",
+			"alt": "Kosher-style delicatessen with legendary pastrami, corned beef and Jewish deli classics",
 			"address": "205 E Houston St, New York, NY 10002",
 			"latlng": {
 				"lat": 40.722216,
@@ -169,6 +173,7 @@
 			"name": "Roberta's Pizza",
 			"neighborhood": "Brooklyn",
 			"photograph": "5.jpg",
+			"alt": "Trendy, popular destination featuring Italian fare & wood-fired pizzas, plus a takeout area",
 			"address": "261 Moore St, Brooklyn, NY 11206",
 			"latlng": {
 				"lat": 40.705089,
@@ -210,6 +215,7 @@
 			"name": "Hometown BBQ",
 			"neighborhood": "Brooklyn",
 			"photograph": "6.jpg",
+			"alt": "Rustic counter-service choice featuring slow smoked meats, craft beer & live music on weekends",
 			"address": "454 Van Brunt St, Brooklyn, NY 11231",
 			"latlng": {
 				"lat": 40.674925,
@@ -251,6 +257,7 @@
 			"name": "Superiority Burger",
 			"neighborhood": "Manhattan",
 			"photograph": "7.jpg",
+			"alt": "Compact, all-vegetarian fast-food spot serving up popular burgers in white-tiled surroundings",
 			"address": "430 E 9th St, New York, NY 10009",
 			"latlng": {
 				"lat": 40.727397,
@@ -292,6 +299,7 @@
 			"name": "The Dutch",
 			"neighborhood": "Manhattan",
 			"photograph": "8.jpg",
+			"alt": "Regional American fare (including oysters and much-hyped fried chicken) in a lively, modern space",
 			"address": "131 Sullivan St, New York, NY 10012",
 			"latlng": {
 				"lat": 40.726584,
@@ -333,6 +341,7 @@
 			"name": "Mu Ramen",
 			"neighborhood": "Queens",
 			"photograph": "9.jpg",
+			"alt": "Brick-walled spot for Japanese noodles & appetizers by a Per Se vet, plus beer, wine & sake",
 			"address": "1209 Jackson Ave, Queens, NY 11101",
 			"latlng": {
 				"lat": 40.743797,
@@ -374,6 +383,7 @@
 			"name": "Casa Enrique",
 			"neighborhood": "Queens",
 			"photograph": "10.jpg",
+			"alt": "Casual cantina serving up refined Mexican classics & cocktails amid concrete floors & mod seating",
 			"address": "5-48 49th Ave, Queens, NY 11101",
 			"latlng": {
 				"lat": 40.743394,

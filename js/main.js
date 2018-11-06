@@ -1,7 +1,7 @@
 let restaurants, neighborhoods, cuisines;
 var newMap;
 var markers = [];
-
+let i = 3;
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -176,8 +176,9 @@ createRestaurantHTML = restaurant => {
 	const restInfoContainer = document.createElement('div');
 	restInfoContainer.classList = 'restaurant-info-container';
 
-	const name = document.createElement('h1');
+	const name = document.createElement('h2');
 	name.innerHTML = restaurant.name;
+	name.tabIndex = i++;
 	restInfoContainer.append(name);
 
 	const neighborhood = document.createElement('p');
@@ -190,6 +191,7 @@ createRestaurantHTML = restaurant => {
 
 	const more = document.createElement('a');
 	more.innerHTML = 'View Details';
+	more.tabIndex = i++;
 	more.href = DBHelper.urlForRestaurant(restaurant);
 	restInfoContainer.append(more);
 

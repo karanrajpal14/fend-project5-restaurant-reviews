@@ -1,6 +1,6 @@
 let restaurant;
 var newMap;
-
+let iHours = 6;
 /**
  * Initialize map as soon as the page is loaded.
  */
@@ -90,12 +90,14 @@ fetchRestaurantFromURL = callback => {
 fillRestaurantHTML = (restaurant = self.restaurant) => {
 	const name = document.getElementById('restaurant-name');
 	name.innerHTML = restaurant.name;
+	name.tabIndex = 3;
 
 	const address = document.getElementById('restaurant-address');
 	address.innerHTML = restaurant.address;
 
 	const image = document.getElementById('restaurant-img');
 	image.className = 'restaurant-img';
+	image.alt = restaurant.alt;
 	image.src = DBHelper.imageUrlForRestaurant(restaurant);
 
 	const cuisine = document.getElementById('restaurant-cuisine');
@@ -121,10 +123,12 @@ fillRestaurantHoursHTML = (
 
 		const day = document.createElement('td');
 		day.innerHTML = key;
+		day.tabIndex = iHours++;
 		row.appendChild(day);
 
 		const time = document.createElement('td');
 		time.innerHTML = operatingHours[key];
+		time.tabIndex = iHours++;
 		row.appendChild(time);
 
 		hours.appendChild(row);
@@ -138,6 +142,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
 	const container = document.getElementById('reviews-container');
 	const title = document.createElement('h2');
 	title.innerHTML = 'Reviews';
+	title.tabIndex = iHours++;
 	container.appendChild(title);
 
 	if (!reviews) {
@@ -160,18 +165,22 @@ createReviewHTML = review => {
 	const li = document.createElement('li');
 	const name = document.createElement('p');
 	name.innerHTML = review.name;
+	name.tabIndex = iHours++;
 	li.appendChild(name);
 
 	const date = document.createElement('p');
 	date.innerHTML = review.date;
+	date.tabIndex = iHours++;
 	li.appendChild(date);
 
 	const rating = document.createElement('p');
 	rating.innerHTML = `Rating: ${review.rating}`;
+	rating.tabIndex = iHours++;
 	li.appendChild(rating);
 
 	const comments = document.createElement('p');
 	comments.innerHTML = review.comments;
+	comments.tabIndex = iHours++;
 	li.appendChild(comments);
 
 	return li;
